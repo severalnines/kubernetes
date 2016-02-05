@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: clustercontrol
+  labels:
+    name: clustercontrol
+spec:
+  containers:
+    - image: severalnines/clustercontrol
+      name: clustercontrol
+      ports:
+        - containerPort: 80
+          name: clustercontrol
